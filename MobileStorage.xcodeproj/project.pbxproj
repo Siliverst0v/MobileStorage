@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FDD23D524212CCCA8416631 /* Pods_MobileStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046FD6A6D2C6341BC138096E /* Pods_MobileStorage.framework */; };
 		A4C34A5B28C5032300BCD70A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C34A5A28C5032300BCD70A /* AppDelegate.swift */; };
 		A4C34A5D28C5032300BCD70A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C34A5C28C5032300BCD70A /* SceneDelegate.swift */; };
 		A4C34A5F28C5032300BCD70A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C34A5E28C5032300BCD70A /* ViewController.swift */; };
 		A4C34A6228C5032300BCD70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C34A6028C5032300BCD70A /* Main.storyboard */; };
 		A4C34A6428C5032400BCD70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C34A6328C5032400BCD70A /* Assets.xcassets */; };
 		A4C34A6728C5032400BCD70A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C34A6528C5032400BCD70A /* LaunchScreen.storyboard */; };
+		A4C34A7128C504B000BCD70A /* MobileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C34A7028C504B000BCD70A /* MobileModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		046FD6A6D2C6341BC138096E /* Pods_MobileStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9E0F38D4AE25E3E17D46E5 /* Pods-MobileStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileStorage.debug.xcconfig"; path = "Target Support Files/Pods-MobileStorage/Pods-MobileStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		8E18ED6FFA622FB1CA9BFCFA /* Pods-MobileStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileStorage.release.xcconfig"; path = "Target Support Files/Pods-MobileStorage/Pods-MobileStorage.release.xcconfig"; sourceTree = "<group>"; };
 		A4C34A5728C5032300BCD70A /* MobileStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C34A5A28C5032300BCD70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C34A5C28C5032300BCD70A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A4C34A6328C5032400BCD70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4C34A6628C5032400BCD70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4C34A6828C5032400BCD70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C34A7028C504B000BCD70A /* MobileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDD23D524212CCCA8416631 /* Pods_MobileStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3849860034B1EAAE1ACFEA03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E0F38D4AE25E3E17D46E5 /* Pods-MobileStorage.debug.xcconfig */,
+				8E18ED6FFA622FB1CA9BFCFA /* Pods-MobileStorage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6434AE8D8FE95529D740CA52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				046FD6A6D2C6341BC138096E /* Pods_MobileStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4C34A4E28C5032300BCD70A = {
 			isa = PBXGroup;
 			children = (
 				A4C34A5928C5032300BCD70A /* MobileStorage */,
 				A4C34A5828C5032300BCD70A /* Products */,
+				3849860034B1EAAE1ACFEA03 /* Pods */,
+				6434AE8D8FE95529D740CA52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +85,7 @@
 				A4C34A5A28C5032300BCD70A /* AppDelegate.swift */,
 				A4C34A5C28C5032300BCD70A /* SceneDelegate.swift */,
 				A4C34A5E28C5032300BCD70A /* ViewController.swift */,
+				A4C34A7028C504B000BCD70A /* MobileModel.swift */,
 				A4C34A6028C5032300BCD70A /* Main.storyboard */,
 				A4C34A6328C5032400BCD70A /* Assets.xcassets */,
 				A4C34A6528C5032400BCD70A /* LaunchScreen.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4C34A6B28C5032400BCD70A /* Build configuration list for PBXNativeTarget "MobileStorage" */;
 			buildPhases = (
+				C897437037813B567653F7F6 /* [CP] Check Pods Manifest.lock */,
 				A4C34A5328C5032300BCD70A /* Sources */,
 				A4C34A5428C5032300BCD70A /* Frameworks */,
 				A4C34A5528C5032300BCD70A /* Resources */,
+				C608CF96312D4DE36BADCEE7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C608CF96312D4DE36BADCEE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileStorage/Pods-MobileStorage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileStorage/Pods-MobileStorage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileStorage/Pods-MobileStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C897437037813B567653F7F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4C34A5328C5032300BCD70A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				A4C34A5F28C5032300BCD70A /* ViewController.swift in Sources */,
 				A4C34A5B28C5032300BCD70A /* AppDelegate.swift in Sources */,
+				A4C34A7128C504B000BCD70A /* MobileModel.swift in Sources */,
 				A4C34A5D28C5032300BCD70A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		A4C34A6C28C5032400BCD70A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9E0F38D4AE25E3E17D46E5 /* Pods-MobileStorage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		A4C34A6D28C5032400BCD70A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E18ED6FFA622FB1CA9BFCFA /* Pods-MobileStorage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
