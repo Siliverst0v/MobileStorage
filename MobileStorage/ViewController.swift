@@ -90,7 +90,8 @@ class ViewController: UIViewController, MobileStorage {
                 let savedMobile = try! self.save(newMobile)
                 
                 self.mobiles.append(savedMobile)
-                self.tableView.reloadData()
+                let indexPath = IndexPath(row: self.mobiles.count - 1, section: 0)
+                self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
         }))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
