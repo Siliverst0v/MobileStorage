@@ -2,7 +2,9 @@
 iOS Developer Tech Task
 
 // Implement mobile phone storage protocol
+
 // Requirements:
+
 // - Mobiles must be unique (IMEI is an unique number)
 // - Mobiles must be stored in memory
 
